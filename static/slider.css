@@ -1,13 +1,13 @@
 .slider-container {
     width: 100%;
-    height: 550px;
+    height: 560px;
     background-color: aquamarine;
     position: relative;
     }
     .slider-container img{
     display: none;
     width: 100%;
-    height: 550px;  
+    height: 560px;  
     }
     .active img{
     display: block;
