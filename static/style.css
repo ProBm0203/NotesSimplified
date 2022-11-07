@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.background{
+    background: linear-gradient(to right, rgb(255, 0, 174), rgb(0, 255, 213));
+    /* background-color: black; */
+}
 .navbar{
     display: flex;
     flex-direction: column;
@@ -41,7 +45,7 @@
     height: 2px;
     width: 0;
     left: 0;
-    bottom: -1px;
+    bottom: -5px;
     transition: 0.5s ease-in-out;
 }
 
@@ -63,7 +67,10 @@
     width: 70%;  
 }
 
-.background{
-    background: linear-gradient(to right, rgb(255, 0, 174), rgb(0, 255, 213));
-    /* background-color: black; */
+
+/*footer*/
+.copyright-container{
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
 }
