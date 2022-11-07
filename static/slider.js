@@ -10,7 +10,6 @@ document.getElementById("button-prev").addEventListener("click", () => {
 });
 
 function changeSlide(moveTo) {    
-  console.log("c",currentSlide);
   if (moveTo >= slides.length) {
     moveTo = 0;
   }

@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+require('./db/mongo')
 const app = express();
 const port = 8000;
 //EXPRESS SPECIFIC STUFF
