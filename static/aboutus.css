@@ -31,8 +31,9 @@
     background-color: rgba(48,25,32,0.4);
     margin: 0px 50px;
     padding: 15px;
-    width: 260px;
+    width: 275px;
     border-radius: 20px;
+    margin-bottom: 20px;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     color: rgba(41, 5, 65, 1);
     transition: all 0.3s ease-in-out;

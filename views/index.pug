@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="../static/style.css">
         <link rel="stylesheet" href="../static/slider.css">
         <link rel="stylesheet" href="../static/aboutus.css">
+        <link rel="stylesheet" href="../static/contactus.css">
+        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="navbar background">
@@ -16,7 +18,7 @@
             </div>
             <ul class="nav-list">
                 <li>
-                    <a href="">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
                     <a href="">Notes</a>
@@ -25,10 +27,10 @@
                     <a href="">Add Notes</a>
                 </li>
                 <li>
-                    <a href="">About Us</a>
+                    <a href="#about-section">About Us</a>
                 </li>
                 <li>
-                    <a href="">Contact Us</a>
+                    <a href="#contactUsContainer">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -56,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-section background">
+        <div class="about-section background" id="about-section">
             <h1>About Us</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eveniet hic, id, tenetur ducimus eum quaerat facere nam delectus consectetur cum nobis et nostrum in officia? Error quia soluta qui ab. Quis nisi laudantium harum ab praesentium obcaecati, alias commodi. Lorem ipsum, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, dolorem. dolor sit amet consectetur adipisicing elit. Dolore adipisci velit ducimus illo voluptatum aperiam, quam eveniet neque, molestias et cumque magni facere dolorum suscipit impedit fugit, voluptates saepe quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet porro perferendis mollitia quidem, cupiditate architecto eius et sint facilis eos.</p>
             <br>
@@ -80,12 +82,86 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic reiciendis dicta ducimus repudiandae recusandae velit blanditiis deleniti numquam minima consequuntur.</p>
             </div>
         </div>
+        <div class="contactUsContainer background" id="contactUsContainer">
+            <!-- <span class="big-circle"></span>
+            <img src="img/shape.png" class="square" alt=""/> -->
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Let's get in touch</h3>
+                    <p class="text">Get in touch with us, give us feedbacks and more, so that the next time you visit this website. You can see the website much more beautiful!!!</p>
+
+                    <div class="info">
+                        <div class="information">
+                            <img src="../static/img/location.png" class="icon" alt=""/>
+                            <p>Ambedkar Institute of Tehnology, Shakarpur</p>
+                        </div>
+                        <div class="information">
+                            <img src="../static/img/email.png" class="icon" alt=""/>
+                            <p>notessimplified123@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <img src="../static/img/phone.png" class="icon" alt=""/>
+                            <p>123-456-789</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <p>Connect with us :</p>
+                        <div class="social-icons">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form action="index.html" autocomplete="off">
+                        <h3 class="title">Contact us</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input"/>
+                            <label for="">Username</label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input"/>
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="phone" class="input"/>
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn"/>
+                    </form>
+                </div>
+            </div>
+        </div>
         <footer>
             <p class="copyright-container">
-                Copyright &copy; 2022 NotesSimplied - All Rights Reserved
+                Copyright &copy; 2022 NotesSimplified - All rights reserved
             </p>
         </footer>
 
+        <script src="../static/contactus.js"></script>
         <script src="../static/slider.js"></script>
     </body>
 </html>
