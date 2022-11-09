@@ -6,20 +6,22 @@ block style
     style 
         include ../static/notes.css 
 
-block content 
-    <div class="container">
-        <input type="checkbox" id="switch">
-        <div class="signup">
-            <label for="switch">Sign Up</label>
-            <input type="text" name="username" placeholder="User name">
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Password">
-            <button id="submit-button">Sign Up</button>
-        </div>
-        <div class="login">
-            <label for="switch">Login</label>
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="pswd" placeholder="Password">
-            <button id="submit-button">Login</button>
-        </div>        
-    </div>    
+block content
+    <div class="main-login background">
+        <form action="" class="container">
+            <input type="checkbox" id="switch">
+            <div class="signup">
+                <label for="switch">Sign Up</label>
+                <input type="text" name="username" placeholder="User name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <button id="submit-button">Sign Up</button>
+            </div>
+            <div class="login">
+                <label for="switch">Login</label>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="pswd" placeholder="Password">
+                <button id="submit-button">Login</button>
+            </div>        
+        </form>
+    </div>   
