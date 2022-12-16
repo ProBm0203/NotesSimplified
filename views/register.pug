@@ -1,0 +1,23 @@
+extends base.pug 
+
+block script 
+
+block style 
+    style   
+        include ../static/register.css
+
+block content 
+     <form action="/register" class="register_main" method="post" autocomplete="off">
+            <div class="signup">
+                <label for="switch"><h2>Sign Up</h2></label>
+                <input type="text" name="username" placeholder="User name">
+                <input type="text" name="phone" placeholder="Enter your phone number">
+                <input type="number" name="age" placeholder="Enter your age">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <div class="register_btn">
+                    <button class="btn-signup">Sign Up</button>
+                    <button type="reset"class="btn-signup" >Reset</button>
+                </div>     
+            </div>
+     </form>      

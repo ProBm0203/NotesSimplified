@@ -1,8 +1,9 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
-const User = require('./db/user');
 require('./db/mongo')
+const User = require('./db/user');
+const Register = require('./db/register');
 const app = express();
 const port = 8000;
 //EXPRESS SPECIFIC STUFF
@@ -24,6 +25,14 @@ app.get('/notes',(req, res)=>{
     const params = {};
     res.status(200).render('notes.pug',  params);
 })
+app.get('/login',(req, res)=>{
+    const params = {};
+    res.status(200).render('login.pug',  params);
+})
+app.get('/register',(req, res)=>{
+    const params = {};
+    res.status(200).render('register.pug',  params);
+})
 
 app.post('/',(req, res) =>{
     var myData = new User(req.body);
@@ -33,6 +42,31 @@ app.post('/',(req, res) =>{
       res.status(400).send("Item was not saved to the database .")
   })
   })
+app.post('/register',(req, res) =>{
+    var registerData = new Register(req.body);
+    registerData.save().then(() =>{
+        res.status(200).render('login.pug');
+  }) .catch(()=>{
+      res.status(400).send("Item was not saved to the database .")
+  })
+  })
+
+  app.post('/login',async (req, res)=>{
+    try {
+            const email = req.body.email;
+            const password = req.body.password;
+
+            const useremail = await  Register.findOne({email:email});
+            if(useremail.password === password){
+                res.status(200).render('notes.pug');
+            }else{
+                res.send("Invalid");
+            }
+
+    } catch (error) {
+        res.status(400).send("Invalid login details");
+    }
+})
 
 //START THE SERVER 
 

@@ -1,0 +1,22 @@
+extends base.pug 
+
+block script 
+
+block style 
+    style
+        include ../static/login.css
+
+block content 
+    <form action="/login" method="post" autocomplete="off" class="login_main">
+        <div class="login">
+            <label for="switch"><h2>Login</h2></label>
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <div class="login_btn">
+                <button id="submit-button" type="submit" class="btn-login">Login</button>
+                <button type="reset" class="btn-login">Reset</button>
+            </div>
+            <a href="/register" class="signup"> SignUp </a>
+
+        </div>        
+    </form>
