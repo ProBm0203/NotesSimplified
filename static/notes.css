@@ -1,14 +1,16 @@
+body{
+    background: linear-gradient(to right, rgb(255, 0, 174), rgb(0, 255, 213));
+}
 .btnlogin{
     font-size: 18px;
-    color: rgb(73, 73, 73);
+    color: rgba(41, 5, 65, 0.7);
     text-shadow:0 0 15px rgba(0,0,0,0.5) ;
     z-index: 10;
     position: absolute;
     right: 10px;
 }
 .btnlogin:hover{
-    color: black;
-    font-weight: bold;
+    color: rgba(41, 5, 65, 1);
     
 }
 .copyright-container{
@@ -17,9 +19,33 @@
     width: 100vw;
 }
 
-.image{
+/* .image{
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+.bca{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-top: 60px;
+}
+.sem{
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 8px 30px;
+    color: white;
+    background-color: rgba(41, 5, 65, 0.9);
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    transition: all 0.3s ease-in-out;
+}
+.sem:hover{
+    cursor: pointer;
+    background-color: rgba(41, 5, 65, 1);
+    transform: scale(1.1);
 }
