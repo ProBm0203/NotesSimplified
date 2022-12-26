@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+const bcrypt = require("bcryptjs")
 require('./db/mongo')
 const User = require('./db/user');
 const Register = require('./db/register');
@@ -44,6 +45,9 @@ app.post('/',(req, res) =>{
   })
 app.post('/register',(req, res) =>{
     var registerData = new Register(req.body);
+
+    //PASSWORD HASHING..
+
     registerData.save().then(() =>{
         res.status(200).render('login.pug');
   }) .catch(()=>{
@@ -57,7 +61,8 @@ app.post('/register',(req, res) =>{
             const password = req.body.password;
 
             const useremail = await  Register.findOne({email:email});
-            if(useremail.password === password){
+            const isMatch = bcrypt.compare(password, useremail.password);
+            if(isMatch){
                 res.status(200).render('notes.pug');
             }else{
                 res.send("Invalid");
