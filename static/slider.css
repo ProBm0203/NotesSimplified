@@ -69,3 +69,34 @@
 .dots-container .activeDot{
     background-color: rgb(212, 102, 80);
 }
+
+@media only screen and (max-width : 750px){
+    .main-slider{
+        height: 63vh;
+        width: 100%;
+    }
+    .slider-container {
+        width: 90%;
+        height: 50vh;
+    }
+    .slider-container img{
+        width: 100%;
+        height: 50vh;
+        border-radius: 20px;
+    }
+}
+@media only screen and (max-width : 600px){
+    .main-slider{
+        height: 50vh;
+        width: 100%;
+    }
+    .slider-container {
+        width: 90%;
+        height: 40vh;
+    }
+    .slider-container img{
+        width: 100%;
+        height: 40vh;
+        border-radius: 20px;
+    }
+}

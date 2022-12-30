@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center;
     padding: 10px 50px 0px 50px;
-    color: rgba(41, 5, 65, 0.973);
+    /* color: rgba(41, 5, 65, 0.973); */
+    color: black;
 }
 .about-section p{
     padding-top: 10px;
@@ -28,14 +29,15 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
-    background-color: rgba(48,25,32,0.4);
+    background-color: rgba(49, 27, 33, 0.5);
     margin: 0px 50px;
     padding: 15px;
     width: 275px;
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    color: rgba(41, 5, 65, 1);
+    /* color: rgba(41, 5, 65, 1); */
+    color: black;
     transition: all 0.3s ease-in-out;
 }
 .members:hover{

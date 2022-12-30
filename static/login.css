@@ -1,7 +1,9 @@
-body{ 
-    background: linear-gradient(to right, rgb(255, 0, 174), rgb(0, 255, 213));
+body{
+    background-image: url(../static/img/background2.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
 }
-
 .login_main{
     /* border: 2px solid black; */
     display: flex;
@@ -10,8 +12,7 @@ body{
     align-items: center;
     /* width: 100%; */
     height: 78.1vh;
-    /* z-index: -1; */
-    background: linear-gradient(to right, rgb(255, 0, 174), rgb(0, 255, 213));
+    z-index: 1;
 
 
 }
@@ -20,7 +21,7 @@ h2{
 }
 .login{
     /* border: 2px solid green; */
-    background-color: rgb(195, 195, 195);
+    background-color: rgba(49, 27, 33, 0.55);
     border-radius:15px;
     width: 450px;
     height: 65%;
@@ -35,7 +36,7 @@ h2{
 input {
     width: 300px;
     outline: none;
-    border: 2px solid black;
+    border: 1.5px solid black;
     /* background: none; */
     padding: 0.2rem 1.2rem;
     color: black;
@@ -70,17 +71,18 @@ input {
 .signup {
     /* text-decoration: none; */
     font-size: 18px;
-    color: rgb(73, 73, 73);
-    text-shadow:0 0 15px rgba(0,0,0,0.5) ;
-
+    color: rgb(29, 28, 28);
+    
 }
 .signup:hover{
     color: black;
-    font-weight: bold;
+    text-shadow:0 0 15px rgba(0,0,0,0.5) ;
+
     
 }
 .copyright-container{
     position: fixed;
     bottom: 0;
     width: 100vw;
+    z-index: 2;
 }
