@@ -9,9 +9,15 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    color: black;
+}
 .background{
-    background: linear-gradient(to right, rgb(255, 0, 174), rgb(0, 255, 213));
+    /* background: linear-gradient(to right, rgb(255, 0, 174), rgb(0, 255, 213)); */
     /* background-color: black; */
+    background-image: url(../static/img/background2.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 .navbar{
     display: flex;
@@ -34,13 +40,15 @@ html{
     display: flex;
     list-style: none;
     padding: 0px 25px 9px 25px;
+    
 }
 
 .nav-list li a {
     text-decoration: none;
     font-size: 20px;
     /* color: #a0a0a0; */
-    color: rgba(41, 5, 65, 0.973);
+    /* color: rgba(41, 5, 65, 0.973); */
+    color: black;
     position: relative;
     letter-spacing: 0.5px;
     padding: 0 10px;
@@ -50,7 +58,8 @@ html{
     content: "";
     position: absolute;
     /* background-color: #ff3c78; */
-    background-color: rgba(41, 5, 65, 0.973);
+    /* background-color: rgba(41, 5, 65, 0.973); */
+    background-color: black;
     height: 2px;
     width: 0;
     left: 0;
@@ -63,7 +72,8 @@ html{
 }
 .nav-list li a:hover {
     /* color: #ffffff; */
-    color: rgba(41, 5, 65, 1);
+    /* color: rgba(41, 5, 65, 1); */
+    color: black;
     /* transform: scale(1.2); */
 
 }
@@ -92,7 +102,7 @@ html{
     border-radius: 20px;
 }
 
-@media only screen and (max-width : 750px){
+@media only screen and (max-width : 790px){
     .nav-list{
         flex-direction: column;
         align-items: center ;
@@ -126,6 +136,9 @@ html{
 .copyright-container{
     text-align: center;
     color: white;
-    background-color: rgba(41, 5, 65, 1) ;
-    ;
+    background-color: rgb(24, 0, 41) ;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: 2;
 }

@@ -1,16 +1,18 @@
 body{
-    background: linear-gradient(to right, rgb(255, 0, 174), rgb(0, 255, 213));
+    background-image: url(../static/img/background2.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 .btnlogin{
     font-size: 18px;
-    color: rgba(41, 5, 65, 0.7);
+    color: rgba(25, 20, 29, 0.7);
     text-shadow:0 0 15px rgba(0,0,0,0.5) ;
     z-index: 10;
     position: absolute;
     right: 10px;
 }
 .btnlogin:hover{
-    color: rgba(41, 5, 65, 1);
+    color: black;
     
 }
 .copyright-container{
@@ -40,7 +42,7 @@ body{
     margin-bottom: 15px;
     padding: 8px 30px;
     color: white;
-    background-color: rgba(41, 5, 65, 0.9);
+    background-color: rgba(32, 0, 54, 0.85);
     box-shadow: 0 0 15px rgba(0,0,0,0.7);
     transition: all 0.3s ease-in-out;
 }
