@@ -27,26 +27,29 @@ body{
     justify-content: center;
     align-items: center;
 } */
-.bca{
+.notes{
     display: flex;
-    flex-direction: column;
     width: 100vw;
-    height: 80vh;
+    flex-wrap: wrap;
     justify-content: center;
+    /* height: 80vh; */
     align-items: center;
     padding: 50px;
-    padding-top: 60px;
+    padding-top: 80px;
 }
-.sem{
+.notes a{
+    text-decoration: none;
+}
+.topics{
     border-radius: 20px;
-    margin-bottom: 15px;
-    padding: 8px 30px;
+    margin: 15px 20px;
+    padding: 8px 35px;
     color: white;
     background-color: rgba(32, 0, 54, 0.85);
     box-shadow: 0 0 15px rgba(0,0,0,0.7);
     transition: all 0.3s ease-in-out;
 }
-.sem:hover{
+.topics:hover{
     cursor: pointer;
     background-color: rgba(41, 5, 65, 1);
     transform: scale(1.1);
