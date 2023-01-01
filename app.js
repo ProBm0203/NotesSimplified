@@ -38,7 +38,8 @@ app.get('/register',(req, res)=>{
 app.post('/',(req, res) =>{
     var myData = new User(req.body);
     myData.save().then(() =>{
-      res.send("This item has been saved to the database")
+    //   res.send("This item has been saved to the database")
+    res.status(200).render('index.pug');
   }) .catch(()=>{
       res.status(400).send("Item was not saved to the database .")
   })
@@ -46,7 +47,6 @@ app.post('/',(req, res) =>{
 app.post('/register',(req, res) =>{
     var registerData = new Register(req.body);
 
-    //PASSWORD HASHING..
 
     registerData.save().then(() =>{
         res.status(200).render('login.pug');
